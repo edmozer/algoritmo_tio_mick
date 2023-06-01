@@ -4,6 +4,7 @@ Algoritmo "super-contador"
 Var
 numero, ini: inteiro
  resp: caractere
+ procedimento topo()
 Inicio
 escreval("================")
 escreval("|     MENU     |")
@@ -13,6 +14,9 @@ escreval("[2] Se 10 a 1  |")
 escreval("[3] Sair       |")
 escreval("================")
 leia(numero)
+ fimprocedimento
+inicio
+      topo()
             se (numero = 1) ou (numero = 2) ou (numero = 3) entao
             escolha numero
                     caso 1
@@ -36,6 +40,7 @@ leia(numero)
             senao
             escreval("Opcao invalida.")
             fimse
+      topo()
 
 
 Fimalgoritmo
